@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> YourEvent-Online Registration </title>
+</head>
+
+<body>
+    <div class="logo"><center>🏅 YourEvent</center></div>
+
+    <div class="banner"><center>Online Registration</center></div>
+
+    <form>
+        <label>First Name</label>  <label>Last Name</label><br>
+        <input type="text" placeholder="First Name"> <input type="text" placeholder="Last Name"><br><br>
+                
+        <label>Email Address</label><br>
+        <input type="email" placeholder="Email Address"><br><br>
+        
+        <label>Company (if applicable)</label><br>
+        <input type="text" placeholder="Company"><br><br>
+
+        <label>Physical Address</label><br>
+        <input type="text" placeholder="Physical Address"><br><br>
+        
+        <label>Date of Birth</label><br>
+                <select>
+                    <option>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+                <select>
+                    <option>Day</option>
+                    <!-- Days 1-31 -->
+                    <script>
+                        for (let i = 1; i <= 31; i++) {
+                            document.write("<option>" + i + "</option>");
+                        }
+                    </script>
+                </select>
+
+                <select>
+                    <option>Year</option>
+                    <script>
+                        for (let y = 2024; y >= 1950; y--) {
+                            document.write("<option>" + y + "</option>");
+                        }
+                    </script>
+                </select>
+
+                <span class="calendar-icon">📅</span>
+            
+    </form>
+</body>
+</html>
